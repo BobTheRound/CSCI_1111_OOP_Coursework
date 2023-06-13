@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ch44_31","l":"creditCardNumValidation"}];updateSearchResults();
