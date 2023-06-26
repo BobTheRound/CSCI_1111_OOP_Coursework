@@ -17,7 +17,7 @@ public class StringFinder {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String stringIn = " ";
-		String stringSet = "x";
+		String stringSet = "debugMe";
 		
 		stringGetter s1 = new stringGetter();
 		s1.userString(input, stringIn, letterCount);
