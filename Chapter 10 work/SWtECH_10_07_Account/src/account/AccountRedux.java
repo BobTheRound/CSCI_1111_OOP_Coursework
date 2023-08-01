@@ -32,7 +32,11 @@ public class AccountRedux {
 	static Account[] accounts;
 	static Account[] createAccounts() {
 		Account account = new Account();
-	
+		
+		if(lookupID > accounts.length ^ lookupID < 0) {
+			System.out.println("ERROR invalid input, try again please.");
+			menuPrint(accounts);
+			
 		account.setDateCreated();
 
 		accounts = new Account[10];
@@ -82,8 +86,13 @@ public class AccountRedux {
 			
 			case "3": activeAccount.checkBalance();
 			menuProcessing(input, activeAccount);
+			
 			case "4": accountSelect(input);
-			break;			
+			break;	
+
+			default : System.out.println("Invalid Input, please try again.");
+			menuProcessing(input, activeAccount);
+			break;
 			}
 			
 			return functionOption;
